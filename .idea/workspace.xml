@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c31fd22-a7c0-43de-9da5-cf7e92756da3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/27.组件_事件传递.html" beforeDir="false" afterPath="$PROJECT_DIR$/27.组件_事件传递.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/28.组件_slot插槽.html" beforeDir="false" afterPath="$PROJECT_DIR$/28.组件_slot插槽.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,65 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/27.组件_事件传递.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="48" selection-end-line="50" />
+            <state relative-caret-position="361">
+              <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/28.组件_slot插槽.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/29.组件_组合slot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/21.组件_局部的组件.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/22.组件_表行组件.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/23.组件_数据.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/25.组件_传递变量.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="73" />
+            <state relative-caret-position="304">
+              <caret line="19" column="49" lean-forward="true" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -143,10 +99,10 @@
         <option value="$PROJECT_DIR$/25.组件_传递变量.html" />
         <option value="$PROJECT_DIR$/26.组件_参数验证.html" />
         <option value="$PROJECT_DIR$/20.组件_基础的基础.html" />
-        <option value="$PROJECT_DIR$/28.组件_slot插槽.html" />
         <option value="$PROJECT_DIR$/29.组件_组合slot.html" />
         <option value="$PROJECT_DIR$/22.组件_表行组件.html" />
         <option value="$PROJECT_DIR$/27.组件_事件传递.html" />
+        <option value="$PROJECT_DIR$/28.组件_slot插槽.html" />
       </list>
     </option>
   </component>
@@ -210,12 +166,12 @@
       <option name="presentableId" value="Default" />
       <updated>1566960031084</updated>
       <workItem from="1566960032256" duration="2544000" />
-      <workItem from="1566963303792" duration="21788000" />
+      <workItem from="1566963303792" duration="22329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24332000" />
+    <option name="totallyTimeSpent" value="24873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -431,23 +387,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/28.组件_slot插槽.html">
+    <entry file="file://$PROJECT_DIR$/24.组件_传递数据.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="73" />
+        <state relative-caret-position="247">
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/27.组件_事件传递.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/29.组件_组合slot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
+        <state relative-caret-position="532">
           <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/21.组件_局部的组件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="380">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
         </state>
       </provider>
@@ -473,17 +436,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/24.组件_传递数据.html">
+    <entry file="file://$PROJECT_DIR$/28.组件_slot插槽.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/27.组件_事件传递.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="48" selection-end-line="50" />
+        <state relative-caret-position="304">
+          <caret line="19" column="49" lean-forward="true" selection-end-line="34" />
         </state>
       </provider>
     </entry>
