@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置计算属性</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+      <div id="app">
+          <p>今年的max的主机的价格是：{{price}}円 , 金税价格为：{{priceInTax}}, 折合人民币为{{priceChinaRMB}}</p>
+          <button @click="btnClick(10800)">把含税改价为10800円</button>
+      </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data: {
+                price: 29980
+            },
+            computed:{
+                priceInTax: {
+                    get:function(){
+                        return this.price * 1.08;
+                    },
+                    set: function(value){
+                        this.price = value / 1.08;
+                    }
+                },
+                priceChinaRMB: function(){
+                    return Math.round(this.priceInTax / 16.75);
+                },
+            },
+            methods: {
+                btnClick: function(newPrice){
+                    this.priceInTax = newPrice;
+                },
+            },
+        });
+    </script>
+</body>
+</html>

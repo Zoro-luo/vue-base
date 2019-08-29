@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>v-show</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+<!-- v-show 会在doc中显示元素 而 v-if 则不会显示在doc中 -->
+<div id="app">
+    <h1 v-show="result">任天堂新一代主机Switch</h1>
+    <button @click="btnClick">考试成绩</button>
+</div>
+<script>
+    var app = new Vue({
+        el:"#app",
+        data:{
+            result:true,
+        },
+        methods:{
+            btnClick(){
+                this.result = !this.result;
+            }
+        }
+    })
+</script>
+</body>
+</html>

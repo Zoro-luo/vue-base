@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+    <!-- 组件  -->
+    <div id="app">
+        <ol>
+            <game-item v-for="item in games" :game="item"></game-item>
+            <play-game v-for="item in list" :student="item"></play-game>
+
+        </ol>
+    </div>
+    <script>
+        /*定义game-item组件  */
+        Vue.component('game-item',{
+            props:['game'],
+            template:"<li>{{game.title}}</li>",
+        });
+        /*定义play-game组件  */
+        Vue.component("play-game",{
+            props:['student'],
+            template:"<li>{{student.name}} -- {{student.sex}} </li>"
+        });
+
+        /* Vue 对象实例化 */
+        var app = new Vue({
+            el:"#app",
+            data:{
+                games:[
+                    {title:'斗地主'},
+                    {title:'打飞机'},
+                    {title:'魂斗罗'},
+                    {title:'破锣嗓'},
+                ],
+                list:[
+                    {name:'zhangsan',age:20,sex:"man"},
+                    {name:'lisi',age:25,sex:"woman"},
+                    {name:'hanmeimei',age:18,sex:"woman"},
+                    {name:'wangwu',age:31,sex:"man"},
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

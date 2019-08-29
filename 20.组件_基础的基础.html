@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>组件：基础</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+<div id="myApp">
+    <today-weather></today-weather>
+</div>
+<script>
+    Vue.component('today-weather', {
+        template: '<div>今天下雨，出不去啦，干什么呢？看Youtube吧!</div>'
+    });
+    var myApp = new Vue({
+        el: '#myApp',
+    });
+</script>
+</body>
+</html>

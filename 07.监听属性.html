@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>监听属性</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+    <!-- $watch 与computed属性类似，用于观察变量的变化，然后进行相应的处理 -->
+    <div id="app">
+        今年的max的主机的价格是：{{price}}円 , 金税价格为：{{priceIndex}}, 折合人民币为{{priceChinaRMB}} <br/>
+        <button @click="btnClick(10000)" > 加价10000円 </button>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                price:0,
+                priceIndex:0,
+                priceChinaRMB:0,
+            },
+            //监听 属性price的数值变化
+            watch:{
+                price:function(newVal,oldVal){
+                    //console.log(newVal,oldVal);
+                    this.priceIndex = Math.round(this.price * 1.08);
+                    this.priceChinaRMB = Math.round(this.priceIndex / 16.75);
+                },
+            },
+            methods:{
+                btnClick:function(newPrice){
+                    this.price += newPrice;
+                }
+            }
+        });
+        //初始赋值后使 priceIndex，priceChinaRMB 都显示正常值
+        app.price = 29980;
+    </script>
+</body>
+</html>

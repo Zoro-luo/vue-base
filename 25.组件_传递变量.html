@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>组件：传递变量</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+       <!-- 制作可接受变量参数的组件。 -->
+       <div id="myApp">
+           <div>请输入您的名字：<input v-model="myname"></div>
+           <hr/>
+           <say-hello :pname="myname" />
+       </div>
+       <script>
+           Vue.component('say-hello', {
+               props: ['pname'],
+               template: '<div>你好，<strong>{{pname}}</strong>！</div>',
+           });
+           var myApp = new Vue({
+               el: '#myApp',
+               data: {
+                   myname: 'Koma'
+               }
+           });
+       </script>
+</body>
+</html>

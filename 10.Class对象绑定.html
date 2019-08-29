@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class对象绑定</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    <style>
+        .active{
+            color:red;
+        }
+        .big{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- v-bind:class -->
+    <div id="app">
+        <div :class="myClass">红色文本2</div>
+        <button @click="btnClick">改变Class</button>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                myClass:{
+                    active:true,
+                    big:true,
+                },
+            },
+            methods:{
+                btnClick(){
+                    this.myClass = false;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

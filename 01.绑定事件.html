@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>处理输入</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+       <div id="app">
+           <p>您最喜欢的游戏是：{{mygame}}</p>
+           <button @click="btnClick('魔界战记5')">魔界战记5</button>
+           <button @click="btnClick('超级玛丽')">超级玛丽</button>
+           <button @click="btnClick('魂斗罗')">魂斗罗</button>
+       </div>
+        <script>
+            var app = new Vue({
+                el:"#app",
+                data:{
+                    mygame:'超级马里奥',
+                },
+                methods:{
+                    btnClick(pname){
+                        this.mygame = pname;
+                    }
+                }
+            })
+        </script>
+</body>
+</html>

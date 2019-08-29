@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>双向绑定</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>我最喜欢的游戏是：{{mygame}}</p>
+        <input v-model="mygame"/>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                mygame:"玛丽偶",
+            }
+        })
+    </script>
+</body>
+</html>

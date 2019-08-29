@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+<!-- Vue.js的组件不仅可以单独声明注册使用，还可以在Vue实例中进行局部注册使用。 -->
+<div id="myApp">
+    <my-weather></my-weather>
+</div>
+<script>
+    var WeatherComponent = {
+        template: '<div>今天下雨，随它去吧！</div>'
+    };
+    var myApp = new Vue({
+        el: '#myApp',
+        data: {
+        },
+        components: {
+            'my-weather': WeatherComponent
+        },
+    });
+</script>
+</body>
+</html>

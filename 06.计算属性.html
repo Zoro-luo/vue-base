@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+    <!-- 处理元数据，便于进行二次利用。（比如：消费税自动计算功能） -->
+    <div id="app">
+        今年的max的主机的价格是：{{price}}円 , 金税价格为：{{priceIndex}}, 折合人民币为{{priceChinaRMB}}
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                price:22557,
+            },
+            computed:{
+                priceIndex:function(){
+                    return this.price * 1.08;
+                },
+                priceChinaRMB(){
+                    return Math.round(this.price / 16.75);
+                },
+            },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件与循环</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+    <div id="myApp">
+        <h3>Game list</h3>
+        <!--条件判断式，根据表达式的真伪进行页面处理。-->
+        <div v-if="seen">2017最新发卖</div>
+        <ol>
+            <!--处理数组循环，将数据循环显示到页面上。-->
+            <li v-for="game in games"> {{game.title}} / {{game.price}}</li>
+        </ol>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#myApp",
+            data:{
+                games:[
+                    {title:'勇者斗恶龙',price:400},
+                    {title:'超级马里奥',price:380},
+                    {title:'我的世界',price:99},
+                ],
+                seen:true,
+            }
+
+        });
+    </script>
+</body>
+</html>
