@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>组件：事件传递</title>
@@ -7,14 +7,18 @@
 </head>
 <body>
     <!-- v-on 侦听组件事件，当组件触发事件后进行事件处理。 -->
-    <!-- $emit 触发事件，并将数据提交给事件侦听者。-->
+    <!-- $emit 触发事件，并将数据提交给事件侦听者。(一般用在子组件中,通过事件参数发送给父组件)-->
     <div id="myApp">
         <h1>人生加法</h1>
+        <!--在父组件#myApp中调用子组件[add-method]时通过v-on注册一个侦听子组件[add-method]事件的getAddResult方法 -->
+        <!--a,b是子组件[add-method]的参数,在父组件#myApp中v-on监听子组件add_event方法,如果子组件监听到add_event方法后，
+        则会调用父组件的getAddResult函数  -->
         <add-method :a="6" :b="12" v-on:add_event="getAddResult"></add-method>
         <hr/>
         <h3>{{result}}</h3>
     </div>
     <script>
+        /* 子组件(全局组件)的定义 */
         Vue.component('add-method', {
             props: ['a', 'b'],
             template: '<div><button v-on:click="add">加吧</button></div>',
@@ -28,12 +32,14 @@
                 }
             },
         });
+        /* 父组件 */
         var myApp = new Vue({
             el: '#myApp',
             data: {
                 result: 0
             },
             methods: {
+                /* 参数pval 是子组件中事件触发(this.$emit)的第二个参数 */
                 getAddResult: function(pval){
                     this.result = pval.result;
                 }
